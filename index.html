@@ -29,7 +29,7 @@
                 </div>
                 <ul
                   tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  class=" menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                   <li><a>Home</a></li>
                   <li><a>About</a></li>
                   <li><a>Shop</a></li>
@@ -57,8 +57,8 @@
     </div>
     <!-- this is carousel  -->
     <section class="container mx-auto lg:px-24 px-8">
-        <div class="carousel w-full">
-            <div id="slide1" class="flex justify-center items-center carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0.1)),url(./images/banner1.png)] h-[60vh]">
+        <div class="carousel w-full rounded-lg">
+            <div id="slide1" class="flex justify-center items-center carousel-item relative w-full bg-current bg-cover bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0.1)),url(./images/banner1.png)] h-[60vh]">
                 <div class="flex flex-col justify-center">
                     <h1 class="lg:text-7xl text-4xl text-white font-bold text-center" >Exotic tastes at your <br> doorstep</h1>
                     <p class="text-white w-2/3 mx-auto text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam distinctio voluptates!</p>
@@ -69,7 +69,7 @@
                 <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
             </div>
-            <div id="slide2" class="flex justify-center items-center carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0.1)),url(./images/banner2.png)] h-[60vh]">
+            <div id="slide2" class="flex justify-center items-center carousel-item relative w-full bg-current bg-cover bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0.1)),url(./images/banner2.png)] h-[60vh]">
                 <div class="flex flex-col justify-center">
                     <h1 class="lg:text-7xl text-4xl text-white font-bold text-center" >Exotic tastes at your <br> doorstep</h1>
                     <p class="text-white w-2/3 mx-auto text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam distinctio voluptates!</p>
@@ -80,7 +80,7 @@
                 <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div>
-            <div id="slide3" class="flex justify-center items-center carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0.1)),url(./images/banner3.png)] h-[60vh]">
+            <div id="slide3" class="flex justify-center items-center carousel-item relative w-full bg-current bg-cover bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0.1)),url(./images/banner3.png)] h-[60vh]">
                 <div class="flex flex-col justify-center">
                     <h1 class="lg:text-7xl text-4xl text-white font-bold text-center" >Exotic tastes at your <br> doorstep</h1>
                     <p class="text-white w-2/3 mx-auto text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam distinctio voluptates!</p>
@@ -91,7 +91,7 @@
                 <a href="#slide4" class="btn btn-circle">❯</a>
               </div>
             </div>
-            <div id="slide4" class="flex justify-center items-center carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0.1)),url(./images/banner4.png)] h-[60vh]">
+            <div id="slide4" class="flex justify-center items-center carousel-item relative w-full bg-current bg-cover bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0.1)),url(./images/banner4.png)] h-[60vh]">
                 <div class="flex flex-col justify-center">
                     <h1 class="lg:text-7xl text-4xl text-white font-bold text-center" >Exotic tastes at your <br> doorstep</h1>
                     <p class="text-white w-2/3 mx-auto text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam distinctio voluptates!</p>
@@ -113,5 +113,125 @@
             </div>
           </div>
     </section>
+    <main>
+      <section class="container mx-auto lg:px-24 px-8 my-8">
+        <div class="flex flex-col lg:flex-row justify-between items-center">
+          <div>
+            <h3 class="text-black lg:text-5xl text-2xl font-bold">Deal of the day</h3>
+            <p class="lg:w-2/3 mt-4 text-lg">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div>
+            <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+              <div class="text-black font-bold rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:15;"></span>
+                </span>
+                days
+              </div>
+              <div class="text-black font-bold rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:10;"></span>
+                </span>
+                hours
+              </div>
+              <div class="text-black font-bold rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:24;"></span>
+                </span>
+                min
+              </div>
+              <div class="text-black font-bold rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:${counter};"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div class="border-2 rounded-lg flex flex-col space-y-2 text-black justify-center items-center px-4 py-6">
+            <img src="images/fruit6.png" alt="">
+            <h5 class="text-lg font-bold">$12.99-$18.99</h5>
+            <div class="divider"></div>
+            <p>Apple</p>
+            <div>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-red-400"
+                  checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              </div>
+            </div>
+            <button class="btn btn-ghost text-red-400 mt-3">Details</button>
+          </div>
+          <div class="border-2 rounded-lg flex flex-col space-y-2 text-black justify-center items-center px-4 py-6">
+            <img src="images/fruit7.png" alt="">
+            <h5 class="text-lg font-bold">$12.99-$18.99</h5>
+            <div class="divider"></div>
+            <p>Orange</p>
+            <div>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-red-400"
+                  checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              </div>
+            </div>
+            <button class="btn btn-ghost text-red-400 mt-3">Details</button>
+          </div>
+          <div class="border-2 rounded-lg flex flex-col space-y-2 text-black justify-center items-center px-4 py-6">
+            <img src="images/fruit8.png" alt="">
+            <h5 class="text-lg font-bold">$12.99-$18.99</h5>
+            <div class="divider"></div>
+            <p>Red Dragon</p>
+            <div>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-red-400"
+                  checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              </div>
+            </div>
+            <button class="btn btn-ghost text-red-400 mt-3">Details</button>
+          </div>
+          <div class="border-2 rounded-lg flex flex-col space-y-2 text-black justify-center items-center px-4 py-6">
+            <img src="images/fruit9.png" alt="">
+            <h5 class="text-lg font-bold">$12.99-$18.99</h5>
+            <div class="divider"></div>
+            <p>Banana</p>
+            <div>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-red-400"
+                  checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              </div>
+            </div>
+            <button class="btn btn-ghost text-red-400 mt-3">Details</button>
+          </div>
+        </div>
+      </section>
+    </main>
 </body>
 </html>
